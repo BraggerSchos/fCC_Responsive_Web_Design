@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Healthy Habits Survey</h1>
+    <p id="description">This survey aims to better understand your lifestyle and health habits to provide personalized recommendations.</p>
+     <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" name="age" min="18" max="100" placeholder="Enter your age" required><br>
+
+        <label for="dropdown">How often do you exercise?</label>
+        <select id="dropdown" name="exercise-frequency" required>
+            <option value="never">Never</option>
+            <option value="sometimes">Sometimes</option>
+            <option value="regularly">Regularly</option>
+        </select>
+
+        <fieldset>
+            <legend>How would you rate your current diet?</legend>
+            <label>
+                <input type="radio" name="diet" value="poor"> Poor
+            </label>
+            <label>
+                <input type="radio" name="diet" value="average"> Average
+            </label>
+            <label>
+                <input type="radio" name="diet" value="good"> Good
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select the activities you enjoy</legend>
+            <label>
+                <input type="checkbox" name="activities" value="walking"> Walking
+            </label>
+            <label>
+                <input type="checkbox" name="activities" value="running"> Running
+            </label>
+            <label>
+                <input type="checkbox" name="activities" value="cycling"> Cycling
+            </label>
+            <label>
+                <input type="checkbox" name="activities" value="yoga"> Yoga
+            </label>
+        </fieldset>
+
+        <label for="comments">Any additional comments?</label>
+        <textarea id="comments" name="comments" placeholder="Share any thoughts or feedback here..." rows="4"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+  </body>
+</html>
